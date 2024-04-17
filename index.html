@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ufem</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slider-container {
+            position: relative;
+            width: 50%; 
+            margin: 0 auto; 
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.3s ease; 
+        }
+
+        .slide {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5); 
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 20px;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .text-container {
+            padding: 20px;
+            width: 80%;
+            
+        }
+    </style>
+</head>
+<body class="">
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-2xl">UFEM</h1>
+        </div>
+    </header>
+
+    <div class="menu-container mx-200 relative bg-white p-4 shadow-md">
+        <div class="container mx-auto text-center">
+            <a href="src/login.php" class="text-blue-500 mx-2 m-0.4 hover:text-blue-700">Inicio de Sesión</a>
+            <a href="src/registro.php" class="text-blue-500 mx-2 m-4 hover:text-blue-700">Registro</a>
+        </div>
+    </div>
+    <br>
+    <div class="slider-container  mx-auto relative">
+        <div class="slides">
+            <div class="slide">
+                <img src="src/images/1.jpg" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img src="src/images/2.jpg" alt="Imagen 2">
+            </div>
+        </div>
+        <button class="slider-button prev">&#10094;</button>
+        <button class="slider-button next">&#10095;</button>
+    </div>
+    
+    <div class="text-container bg-white p-4  mx-auto mt-4 sm:w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/3">
+        
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-gray-800">Si te interesa mejorar tu rendimiento, UFEM te permite controlar tu ciclo menstrual en el deporte para así conocer y cuidar tu cuerpo mediante tu disciplina deportiva.</p>
+    </div>
+
+    <main class="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 shadow-md">
+            <img src="src/images/p.jpg" alt="Imagen 1">
+        </div>
+        <div class="bg-white p-4 shadow-md">
+            <div class="text-container">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-gray-800"><br><br> UFEM, es una plataforma con acceso a todas las mujeres deportistas. Si te interesa saber las cargas de entrenamiento adecuadas, es tu momento. UFEM te ofrece conocer tu ciclo menstrual en el deporte y mejorar tu rendimiento.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto py-12 flex flex-col items-center">
+            <h2 class="text-xl font-semibold mb-4">Contáctanos</h2>
+            <p class="mb-4">Para cualquier pregunta o inquietud, no dudes en ponerte en contacto con nosotros.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="m-4 p-2">
+                    <h3 class="text-lg font-semibold mb-2">Desarrolladores</h3>
+                    <ul>
+                        <li>Daniel Jose Morales Teatino</li>
+                        <li>Shara Brigith Bernal Angel</li>
+                    </ul>
+                    <br>
+                    <h3 class="text-lg font-semibold mb-2">Creadores</h3>
+                    <ul>
+                        <li>Omar Gualteros</li>
+                        <li>Michael mancera</li>
+                        <li>Paula salvarán</li>
+                        <li>Wendy fino</li>
+                    </ul>
+                </div>
+                <div class="m-4 p-2">
+                    <h3 class="text-lg font-semibold mb-2">Contactos</h3>
+                    <ul>
+                        <li><a href="mailto:danielmoralesteatino2004@gmail.com">danielmoralesteatino2004@gmail.com</a></li>
+                        <li><a href="mailto:sharabernal104@gmail.com">sharabernal104@gmail.com</a></li>
+                    </ul>
+                    <br>
+                    <h3 class="text-lg font-semibold mb-2">Contactos</h3>
+                    <ul>
+                        <li><a href="mailto:ogualteros@ucundinamarca.edu.co">ogualteros@ucundinamarca.edu.co</a></li>
+                        <li><a href="mailto:mjmancera@ucundinamarca.edu.co">mjmancera@ucundinamarca.edu.co</a></li>
+                        <li><a href="mailto:psulbaran@ucundinamarca.edu.co">psulbaran@ucundinamarca.edu.co</a></li>
+                        <li><a href="mailto:wfino@ucundinamarca.edu.co">wfino@ucundinamarca.edu.co</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-8 text-center">
+                <h3 class="text-lg font-semibold mb-4">Información </h3>
+                <p class="mb-4">UFEM es una plataforma diseñada para ayudar a las mujeres deportistas a controlar su ciclo menstrual y mejorar su rendimiento deportivo.</p>
+            </div>
+            <div class="flex mb-8">
+                <a href="#" class="mr-4 hover:text-gray-400"><i class="fab fa-facebook-f">Facebook</i></a>
+                <a href="#" class="mr-4 hover:text-gray-400"><i class="fab fa-twitter">Twitter</i></a>
+                <a href="#" class="mr-4 hover:text-gray-400"><i class="fab fa-linkedin-in">Linkedin</i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram">Instagram</i></a>
+            </div>
+    
+            <p class="text-sm">&copy; 2024 UFEM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
+            const slides = document.querySelector(".slides");
+
+            let slideIndex = 0;
+
+            function showSlides() {
+                slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+            }
+
+            function nextSlide() {
+                if (slideIndex < slides.children.length - 1) {
+                    slideIndex++;
+                } else {
+                    slideIndex = 0;
+                }
+                showSlides();
+            }
+
+            function prevSlide() {
+                if (slideIndex > 0) {
+                    slideIndex--;
+                } else {
+                    slideIndex = slides.children.length - 1;
+                }
+                showSlides();
+            }
+
+            nextBtn.addEventListener("click", nextSlide);
+            prevBtn.addEventListener("click", prevSlide);
+
+            setInterval(nextSlide, 3000); 
+        });
+    </script>
+</body>
+</html>
